@@ -25,3 +25,5 @@ const getBanknoteList = (amountOfMoney)=> {
 getBanknoteList(2501)
 
 // const btnHandler = getBanknoteList(1500)
+
+
