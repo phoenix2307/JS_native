@@ -111,14 +111,14 @@ import fetch from "node-fetch";
 
 // ALLSETTLED
 
-Promise.allSettled([
-    // ніколи не потрапляє в CATCH
-    //Метод Promise.allSettled() возвращает промис,
-    //который исполняется когда все полученные промисы завершены (исполнены или отклонены),
-    // содержащий массив результатов исполнения полученных промисов.
-    fetch('https://www.google.com/?query=js'),
-    fetch('https://developer.mozilla.org/ru/docs/Web/JavaScript'),
-    fetch('https://search.yahoo.com/')
-])
-    .then((data) => console.log(data.map(i => i.status)))
-    .catch((error) => console.log(error.message))
+// Promise.allSettled([
+//     // ніколи не потрапляє в CATCH
+//     //Метод Promise.allSettled() возвращает промис,
+//     //который исполняется когда все полученные промисы завершены (исполнены или отклонены),
+//     // содержащий массив результатов исполнения полученных промисов.
+//     fetch('https://www.google.com/?query=js'),
+//     fetch('https://developer.mozilla.org/ru/docs/Web/JavaScript'),
+//     fetch('https://search.yahoo.com/')
+// ])
+//     .then((data) => console.log(data.map(i => i.status)))
+//     .catch((error) => console.log(error.message))
